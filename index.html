@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Roboto" rel="stylesheet">
+    <title>Praptisense</title>
+</head>
+
+<body class="">
+    <div class="content-wrapper pt-5 bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-dark">
+            <div class="container">
+                <span class="navbar-brand mb-0 h1">Praptisense</span>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link cur-p" onClick=scrollToDOM("html")>Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link cur-p" onClick=scrollToDOM("#expertise")>Expertise</a>
+                        </li>
+                        <li clbuttonss="nav-item">
+                            <a class="nav-link cur-p" onClick=scrollToDOM("#product")>Products</a>
+                        </li>
+                        <li class=" nav-item">
+                            <a class="nav-link cur-p" onClick=scrollToDOM("#aboutUs")>About</a>
+                        </li>
+                        <!--
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Products
+    </a>
+    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="#">Maya Mirror</a>
+        <a class="dropdown-item" href="#">Another product</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Something else here</a>
+    </div>
+</li>-->
+                        <li class="nav-item">
+                            <a class="nav-link cur-p" onClick=scrollToDOM("#contactUs")>Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--  main content  -->
+        <div class="main-content-wrapper container bg-transparent text-secondary">
+            <div class="main-content overflow-hidden bg-white rounded-pill">
+                <!-- banners -->
+                <section class="banner d-flex justify-content-center">
+                    <div id="banner-wrapper"></div>
+
+                    <div class="align-self-center bg-white rounded-pill pl-3 pr-3 shadow">
+                        <h1 class="text-center txt-r-grn-blu p-3 m-0 font-weight-light"> PRAPTISENSE</h1>
+                    </div>
+                </section>
+                <!-- banners end-->
+
+                <!-- Expertise -->
+                <section id="expertise" class="container bg-white">
+                    <div class="row">
+                        <div class="col">
+                            <h1 class="text-center green">We are Experts in</h1>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col">
+                            <div class="card bg-transparent txt-r-grn-blu">
+                                <i class=" fas fa-cube mx-auto"></i>
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Augmented Reality</h5>
+                                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card bg-transparent txt-r-grn-blu">
+                                <i class=" fas fa-vr-cardboard mx-auto"></i>
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Virtual Reality</h5>
+                                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card bg-transparent txt-r-grn-blu">
+                                <i class=" fas fa-brain mx-auto"></i>
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Artificial Intelligence</h5>
+                                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Expertise end-->
+
+
+                <!-- Product -->
+                <section id="product" class="container bg-light">
+                    <div class="row">
+                        <div class="col">
+                            <h1 class="text-center purple">Our Products</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col pt-5">
+                            <h1 class="txt-l-grn-blu-purpl">Maya Mirror</h1>
+                            <p>
+                                Mayamirror enables your customers to try on clothes to check the fit and style virtually, rather than physically.
+                                <br>
+                                This process is very easy and fun and allows your customers to try on an unlimited amount of clothing.
+                            </p>
+                            <button id="watchYtVideo" type="button" class="btn btn-lg border-info text-light txt-r-blu-grn pl-4 pr-4">
+                                Watch video
+                            </button>
+                            <a href="mayamirror.html" class="btn btn-lg border-info text-light txt-r-blu-grn ml-4 pl-4 pr-4">
+                                Learn More
+                            </a>
+                        </div>
+                        <div class="col pt-5">
+
+
+                            <div id="productCarousel" class="carousel slide carousel-fade overflow-hidden shadow " data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="img/1.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/2.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/3.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#productCarousel" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#productCarousel" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Product end-->
+
+                <!-- About Us -->
+                <section id="aboutUs" class="container">
+                    <div class="row">
+                        <div class="col">
+                            <h1 class="text-center blue">About Us</h1>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col">
+                            <div class="card bg-transparent txt-r-blu-grn">
+                                <i class=" fas fa-bolt mx-auto"></i>
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Innovation</h5>
+                                    <p class="card-text">We are Praptisense, working on innovative products for the textile industry to increase sales in the retail market.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card bg-transparent txt-r-blu-grn">
+                                <i class=" fas fa-tshirt mx-auto"></i>
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Vision in Textiles</h5>
+                                    <p class="card-text"> Our vision is to make shopping for clothes fun and interactive for your customers. At the same time, we offer you a customer centric marketing solution.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card bg-transparent txt-r-blu-grn">
+                                <i class=" fas fa-life-ring mx-auto"></i>
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Service and Support</h5>
+                                    <p class="card-text">We provide all the services and support you need to attract more customers and realize greater success.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+                <!-- About Us end-->
+
+
+                <!--Contact Us-->
+                <section id="contactUs" class="container bg-light">
+                    <div class="row">
+                        <div class="col">
+                            <h1 class="text-center txt-l-grn-blu-purpl">Get in touch</h1>
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col">
+                            <div class="detail ">
+                                <div class="row p-3">
+                                    <div class="col-1">
+                                        <i class="fas fa-phone mr-2"></i>
+                                    </div>
+                                    <div class="col">
+                                        <a href="tel:+91 861 081 6631" class="text-info">
+                                            +91-861-081-6631
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="row p-3">
+                                    <div class="col-1">
+                                        <i class="fas fa-envelope mr-2"></i>
+                                    </div>
+                                    <div class="col">
+                                        <a href="mailto:info@praptisense.com" class="text-info">
+                                            info@praptisense.com
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="google-map p-3">
+                                <iframe frameborder="0" style="border:0" class="shadow w-100" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0Dx_boXQiwvdz8sJHoYeZNVTdoWONYkU&amp;q=place_id:ChIJn6wOs6lZwokRLKy1iqRcoKw" allowfullscreen=""></iframe>
+                            </div>
+                        </div>
+                        <div class="col p-3">
+                            <form class="w-100">
+                                <div class="form-group row">
+                                    <label for="exampleInputEmail1">Name</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="exampleInputEmail1">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                    <!--<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="exampleInputEmail1">Phone</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                    <!--<small id="emailHelp" class="form-text text-muted">We'll never share your Phone with anyone else.</small>-->
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="exampleFormControlTextarea1">Your Message</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                </div>
+
+                                <div class="form-group row">
+                                    <button type="submit" class="btn btn-lg btn-secondary w-50">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+                <!--Contact Us end-->
+
+                <!--copyright-->
+                <section id="copyright" class="container bg-light">
+                    <div class="mx-auto text-center txt-r-grn-blu">
+                        © Praptisense. All rights reserved.
+                    </div>
+                </section>
+                <!--copyright end-->
+
+            </div>
+        </div>
+    </div>
+
+    <!-- youtube video Modal -->
+    <div id="ytModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="ytModalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content bg-transparent border-0">
+                <div class="modal-header border-0">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <!--                        <span aria-hidden="true">&times;</span>-->
+                        <i class="fas fa-times text-white"></i>
+                    </button>
+                </div>
+                <div class="modal-body border-0 ">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!--    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script src="main.js"></script>
+
+    <script src="js/three.js"></script>
+    <script src="js/bird.js"></script>
+    <script>
+        VANTA.BIRDS({
+            el: ".banner",
+            color2: 0x7986CB,
+            color1: 0x4CAF50
+        })
+    </script>
+
+</body>
+
+</html>

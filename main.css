@@ -2,6 +2,11 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+@media (min-width: 576px) { 
+    .title {
+        font-size: 72px;
+    }
+}
 
 @font-face {
     font-family: 'opalregular';
@@ -70,6 +75,19 @@ h5 {
     color: #fed586;
 }
 
+.bg-blue {
+    background-color: #4cabb1;
+}
+
+.bg-green {
+    background-color: #69c7ad;
+}
+
+.bg-yellow {
+    background-color: #fed586;
+}
+
+
 /*
 .purple {
     color: #AB47BC;
@@ -114,9 +132,18 @@ h5 {
 #expertise,
 #product,
 #contactUs,
-#aboutUs,
-#copyright {
+#aboutUs{
     padding: 120px 50px;
+}
+
+#contactUs
+{
+    padding-bottom: 40px;
+    margin-bottom: 50px;
+}
+
+#copyright {
+    padding-top: 40px;
 }
 
 #expertise h1,
@@ -147,7 +174,8 @@ h5 {
 }
 
 #expertise .card,
-#aboutUs .card {
+#aboutUs .card,
+#contactUs .card {
     border-color: transparent;
     min-width: 200px;
 }
@@ -174,14 +202,31 @@ h5 {
     min-width: 200px;
 }
 
-#contactUs .detail i {
-    font-size: 1.6rem;
-    margin-top: 5px;
+#contactUs .detail .icon-wrap {
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+#contactUs .detail i {
+    color: white;
+    font-size: 30px;
+}
+
+#contactUs .detail a:hover{
+    text-decoration: none !important;
+}
+
+
+/*
 #contactUs .detail a {
     font-size: 1.2rem;
 }
+*/
 
 #ytModal.modal.fade .modal-dialog {
     -webkit-transition: -webkit-transform 0.3s ease-out;

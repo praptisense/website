@@ -12,12 +12,14 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
     <link href="https://fonts.googleapis.com/css?family=Comfortaa|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <title>Praptisense</title>
 </head>
 
 <body class="">
-    <div class="content-wrapper pt-5 bg-dark">
-        <nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-dark">
+    <div class="content-wrapper pt-5 ">
+        <nav class="navbar navbar-expand-lg navbar-dark sticky-top ">
             <div class="container">
                 <span class="navbar-brand mb-0 h1">Praptisense</span>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -59,50 +61,51 @@
         </nav>
         <!--  main content  -->
         <div class="main-content-wrapper container bg-transparent text-secondary">
-            <div class="main-content overflow-hidden bg-white rounded-pill">
+            <div class="main-content overflow-hidden">
                 <!-- banners -->
                 <section class="banner d-flex justify-content-center">
                     <div id="banner-wrapper"></div>
 
-                    <div class="align-self-center bg-white rounded-pill pl-3 pr-3 shadow">
-                        <h1 class="text-center txt-r-grn-blu p-3 m-0 font-weight-light"> PRAPTISENSE</h1>
+                    <div class="align-self-center text-center bg-white rounded-pill pl-5 pr-5 shadow zoom-in" data-aos="zoom-in">
+                        <h1 class="logo-font pt-4 mb-0" style="font-size: 72px"> Praptisense</h1>
+                        <h5 class="pb-2">No Clever Taglines Needed</h5>
                     </div>
                 </section>
                 <!-- banners end-->
 
                 <!-- Expertise -->
-                <section id="expertise" class="container bg-white">
-                    <div class="row">
+                <section id="expertise" class="container bg-white rounded-top">
+                    <div class="row" data-aos="zoom-out">
                         <div class="col">
-                            <h1 class="text-center green">We are Experts in</h1>
+                            <h1 class="text-center">We are Experts in</h1>
                         </div>
                     </div>
                     <div class="row ">
                         <div class="col">
-                            <div class="card bg-transparent txt-r-grn-blu">
-                                <i class=" fas fa-cube mx-auto"></i>
+                            <div class="card bg-transparent" data-aos="fade-up">
+                                <i class="fas fa-cube mx-auto grow blue"></i>
                                 <div class="card-body">
-                                    <h5 class="card-title text-center">Augmented Reality</h5>
+                                    <h4 class="card-title text-center">Augmented Reality</h4>
                                     <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
                                 </div>
                             </div>
                         </div>
 
                         <div class="col">
-                            <div class="card bg-transparent txt-r-grn-blu">
-                                <i class=" fas fa-vr-cardboard mx-auto"></i>
+                            <div class="card bg-transparent" data-aos="fade-up">
+                                <i class=" fas fa-vr-cardboard mx-auto grow green"></i>
                                 <div class="card-body">
-                                    <h5 class="card-title text-center">Virtual Reality</h5>
+                                    <h4 class="card-title text-center">Virtual Reality</h4>
                                     <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
                                 </div>
                             </div>
                         </div>
 
                         <div class="col">
-                            <div class="card bg-transparent txt-r-grn-blu">
-                                <i class=" fas fa-brain mx-auto"></i>
+                            <div class="card bg-transparent" data-aos="fade-up">
+                                <i class=" fas fa-brain mx-auto grow yellow"></i>
                                 <div class="card-body">
-                                    <h5 class="card-title text-center">Artificial Intelligence</h5>
+                                    <h4 class="card-title text-center">Artificial Intelligence</h4>
                                     <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
                                 </div>
                             </div>
@@ -115,27 +118,34 @@
 
                 <!-- Product -->
                 <section id="product" class="container bg-light">
-                    <div class="row">
+                    <div class="row" data-aos="zoom-out">
                         <div class="col">
-                            <h1 class="text-center purple">Our Products</h1>
+                            <h1 class="text-center">Our Products</h1>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col pt-5">
-                            <h1 class="txt-l-grn-blu-purpl">Maya Mirror</h1>
+                        <div class="col pt-5" data-aos="fade-right">
+                            <h1>
+                                <span class="logo-font">
+                                    Maya Mirror
+                                </span>
+                                <h5>
+                                    A Virtual dressing room for the modern world
+                                </h5>
+                            </h1>
                             <p>
                                 Mayamirror enables your customers to try on clothes to check the fit and style virtually, rather than physically.
                                 <br>
                                 This process is very easy and fun and allows your customers to try on an unlimited amount of clothing.
                             </p>
-                            <button id="watchYtVideo" type="button" class="btn btn-lg border-info text-light txt-r-blu-grn pl-4 pr-4">
+                            <button id="watchYtVideo" type="button" class="btn btn-lg btn-secondary  pl-4 pr-4">
                                 Watch video
                             </button>
-                            <a href="mayamirror.html" class="btn btn-lg border-info text-light txt-r-blu-grn ml-4 pl-4 pr-4">
+                            <a href="mayamirror.html" class="btn btn-lg btn-info ml-4 pl-4 pr-4">
                                 Learn More
                             </a>
                         </div>
-                        <div class="col pt-5">
+                        <div class="col pt-5" data-aos="fade-left">
 
 
                             <div id="productCarousel" class="carousel slide carousel-fade overflow-hidden shadow " data-ride="carousel">
@@ -166,38 +176,38 @@
                 <!-- Product end-->
 
                 <!-- About Us -->
-                <section id="aboutUs" class="container">
-                    <div class="row">
+                <section id="aboutUs" class="container bg-white">
+                    <div class="row" data-aos="zoom-out">
                         <div class="col">
-                            <h1 class="text-center blue">About Us</h1>
+                            <h1 class="text-center">About Us</h1>
                         </div>
                     </div>
                     <div class="row ">
                         <div class="col">
-                            <div class="card bg-transparent txt-r-blu-grn">
-                                <i class=" fas fa-bolt mx-auto"></i>
+                            <div class="card bg-transparent" data-aos="fade-up">
+                                <i class=" fas fa-bolt mx-auto grow blue"></i>
                                 <div class="card-body">
-                                    <h5 class="card-title text-center">Innovation</h5>
+                                    <h4 class="card-title text-center">Innovation</h4>
                                     <p class="card-text">We are Praptisense, working on innovative products for the textile industry to increase sales in the retail market.</p>
                                 </div>
                             </div>
                         </div>
 
                         <div class="col">
-                            <div class="card bg-transparent txt-r-blu-grn">
-                                <i class=" fas fa-tshirt mx-auto"></i>
+                            <div class="card bg-transparent" data-aos="fade-up">
+                                <i class=" fas fa-tshirt mx-auto grow green"></i>
                                 <div class="card-body">
-                                    <h5 class="card-title text-center">Vision in Textiles</h5>
+                                    <h4 class="card-title text-center">Vision in Textiles</h4>
                                     <p class="card-text"> Our vision is to make shopping for clothes fun and interactive for your customers. At the same time, we offer you a customer centric marketing solution.</p>
                                 </div>
                             </div>
                         </div>
 
                         <div class="col">
-                            <div class="card bg-transparent txt-r-blu-grn">
-                                <i class=" fas fa-life-ring mx-auto"></i>
+                            <div class="card bg-transparent" data-aos="fade-up">
+                                <i class=" fas fa-life-ring mx-auto grow yellow"></i>
                                 <div class="card-body">
-                                    <h5 class="card-title text-center">Service and Support</h5>
+                                    <h4 class="card-title text-center">Service and Support</h4>
                                     <p class="card-text">We provide all the services and support you need to attract more customers and realize greater success.</p>
                                 </div>
                             </div>
@@ -210,20 +220,20 @@
 
                 <!--Contact Us-->
                 <section id="contactUs" class="container bg-light">
-                    <div class="row">
+                    <div class="row" data-aos="zoom-out">
                         <div class="col">
-                            <h1 class="text-center txt-l-grn-blu-purpl">Get in touch</h1>
+                            <h1 class="text-center">Get in touch</h1>
                         </div>
                     </div>
                     <div class="row mt-5">
-                        <div class="col">
+                        <div class="col" data-aos="fade-right">
                             <div class="detail ">
                                 <div class="row p-3">
                                     <div class="col-1">
                                         <i class="fas fa-phone mr-2"></i>
                                     </div>
                                     <div class="col">
-                                        <a href="tel:+91 861 081 6631" class="text-info">
+                                        <a href="tel:+91 861 081 6631" class="blue">
                                             +91-861-081-6631
                                         </a>
                                     </div>
@@ -233,7 +243,7 @@
                                         <i class="fas fa-envelope mr-2"></i>
                                     </div>
                                     <div class="col">
-                                        <a href="mailto:info@praptisense.com" class="text-info">
+                                        <a href="mailto:info@praptisense.com" class="blue">
                                             info@praptisense.com
                                         </a>
                                     </div>
@@ -243,29 +253,33 @@
                                 <iframe frameborder="0" style="border:0" class="shadow w-100" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0Dx_boXQiwvdz8sJHoYeZNVTdoWONYkU&amp;q=place_id:ChIJn6wOs6lZwokRLKy1iqRcoKw" allowfullscreen=""></iframe>
                             </div>
                         </div>
-                        <div class="col p-3">
+                        <div class="col p-3" data-aos="fade-left">
                             <form class="w-100">
                                 <div class="form-group row">
+
                                     <label for="exampleInputEmail1">Name</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="jhon doe">
                                 </div>
 
                                 <div class="form-group row">
                                     <label for="exampleInputEmail1">Email address</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="john.doe@mail.com">
                                     <!--<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
                                 </div>
 
                                 <div class="form-group row">
                                     <label for="exampleInputEmail1">Phone</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="+91 987654321">
                                     <!--<small id="emailHelp" class="form-text text-muted">We'll never share your Phone with anyone else.</small>-->
                                 </div>
+
 
                                 <div class="form-group row">
                                     <label for="exampleFormControlTextarea1">Your Message</label>
                                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                    <small id="emailHelp" class="form-text text-muted">We'll never share your contact information with anyone else.</small>
                                 </div>
+
 
                                 <div class="form-group row">
                                     <button type="submit" class="btn btn-lg btn-secondary w-50">Submit</button>
@@ -277,8 +291,8 @@
                 <!--Contact Us end-->
 
                 <!--copyright-->
-                <section id="copyright" class="container bg-light">
-                    <div class="mx-auto text-center txt-r-grn-blu">
+                <section id="copyright" class="container bg-light rounded-bottom">
+                    <div class="mx-auto text-center" data-aos="fade-up">
                         © Praptisense. All rights reserved.
                     </div>
                 </section>
@@ -319,11 +333,15 @@
     <script>
         VANTA.BIRDS({
             el: ".banner",
-            color2: 0x7986CB,
-            color1: 0x4CAF50
+            color1: 0x69c7ad,
+            color2: 0x4cabb1,
+            backgroundColor: 0x4e5266,
         })
     </script>
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

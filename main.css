@@ -2,9 +2,25 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+
+@font-face {
+    font-family: 'opalregular';
+    src: url('fonts/opal-webfont.woff2') format('woff2'),
+        url('fonts/opal-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+.logo-font {
+    font-family: 'opalregular', 'Roboto', sans-serif;
+}
+
 .content-wrapper,
-.navbar {
-    background: linear-gradient(to right, #03A9F4AA, #4CAF50AA);
+.navbar,
+.banner {
+    background: #4e5266;
 
 }
 
@@ -13,7 +29,7 @@ h2,
 h3,
 h4,
 h5 {
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Comfortaa', 'Roboto', sans-serif;
 
 }
 
@@ -22,18 +38,10 @@ h5 {
     padding-top: 50px;
 }
 
-.main-content {
-    -webkit-border-radius: 12px;
-    border-radius: 12px;
-}
 
 .banner {
     width: 100%;
     height: 75vh;
-    /*    background-image: url("img/1.jpg");*/
-    /*    background: linear-gradient(to left, #1B5E2099, #0D47A1aa), url('img/1.jpg');*/
-    /*    background: linear-gradient(#00000033, #00000066), url('img/1.jpg');*/
-    background: none;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -51,13 +59,18 @@ h5 {
 
 
 .blue {
-    color: #4cabb1
+    color: #4cabb1;
 }
 
 .green {
     color: #69c7ad;
 }
 
+.yellow {
+    color: #fed586;
+}
+
+/*
 .purple {
     color: #AB47BC;
 }
@@ -96,6 +109,7 @@ h5 {
 .l-grn-blu-purpl {
     background: -webkit-linear-gradient(left, #69c7ad, #4cabb1, #AB47BC);
 }
+*/
 
 #expertise,
 #product,
@@ -119,9 +133,18 @@ h5 {
 #aboutUs .fas {
     font-size: 100px;
     margin-top: 50px;
+    margin-bottom: 15px;
+    cursor: pointer;
 }
 
 
+.grow {
+    transition: all .15s ease-in-out;
+}
+
+.grow:hover {
+    transform: scale(1.2);
+}
 
 #expertise .card,
 #aboutUs .card {

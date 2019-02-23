@@ -18,7 +18,7 @@
 </head>
 
 <body class="">
-    <div class="content-wrapper pt-5 ">
+    <div class="content-wrapper scroller pt-5 ">
         <nav class="navbar navbar-expand-lg navbar-dark sticky-top ">
             <div class="container">
                 <span class="navbar-brand mb-0 h1">Praptisense</span>
@@ -63,18 +63,18 @@
         <div class="main-content-wrapper container bg-transparent text-secondary">
             <div class="main-content overflow-hidden">
                 <!-- banners -->
-                <section class="banner d-flex justify-content-center">
+                <section class="banner rounded d-flex justify-content-center">
                     <div id="banner-wrapper"></div>
 
-                    <div class="align-self-center text-center bg-white rounded-pill pl-5 pr-5 shadow zoom-in" data-aos="zoom-in">
+                    <div class="align-self-center text-center text-white rounded-pill pl-5 pr-5  zoom-in" data-aos="zoom-in" style="background: rgba(47, 49, 61, 0.5); text-shadow: 2px 2px 2px #555;">
                         <h1 class="logo-font pt-4 mb-0" style="font-size: 72px"> Praptisense</h1>
-                        <h5 class="pb-2">No Clever Taglines Needed</h5>
+                        <h5 class="pb-3">No Clever Taglines Needed</h5>
                     </div>
                 </section>
                 <!-- banners end-->
 
                 <!-- Expertise -->
-                <section id="expertise" class="container bg-white rounded-top">
+                <section id="expertise" class="container scroller bg-white rounded-top">
                     <div class="row" data-aos="zoom-out">
                         <div class="col">
                             <h1 class="text-center">We are Experts in</h1>
@@ -117,7 +117,7 @@
 
 
                 <!-- Product -->
-                <section id="product" class="container bg-light">
+                <section id="product" class="container scroller bg-light">
                     <div class="row" data-aos="zoom-out">
                         <div class="col">
                             <h1 class="text-center">Our Products</h1>
@@ -176,7 +176,7 @@
                 <!-- Product end-->
 
                 <!-- About Us -->
-                <section id="aboutUs" class="container bg-white">
+                <section id="aboutUs" class="container scroller bg-white">
                     <div class="row" data-aos="zoom-out">
                         <div class="col">
                             <h1 class="text-center">About Us</h1>
@@ -219,7 +219,7 @@
 
 
                 <!--Contact Us-->
-                <section id="contactUs" class="container bg-light">
+                <section id="contactUs" class="container scroller bg-light">
                     <div class="row" data-aos="zoom-out">
                         <div class="col">
                             <h1 class="text-center">Get in touch</h1>
@@ -291,12 +291,15 @@
                 <!--Contact Us end-->
 
                 <!--copyright-->
-                <section id="copyright" class="container bg-light rounded-bottom">
+                <section id="copyright" class="container scroller mb-6 bg-light rounded-bottom">
                     <div class="mx-auto text-center" data-aos="fade-up">
                         © Praptisense. All rights reserved.
                     </div>
                 </section>
                 <!--copyright end-->
+
+                <section class="scroller">
+                </section>
 
             </div>
         </div>
@@ -330,6 +333,9 @@
 
     <script src="js/three.js"></script>
     <script src="js/bird.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js/scrollify.js"></script>
+
     <script>
         VANTA.BIRDS({
             el: ".banner",
@@ -337,10 +343,13 @@
             color2: 0x4cabb1,
             backgroundColor: 0x4e5266,
         })
-    </script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
         AOS.init();
+
+        $.scrollify({
+            interstitialSection: ".scroller",
+            scrollbars: true,
+            touchScroll: true,
+        });
     </script>
 </body>
 

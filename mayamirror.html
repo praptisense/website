@@ -211,7 +211,7 @@
                     <!--The static section end-->
 
 
-                    <section class="container scroller fullpage d-flex flex-column justify-content-center bg-light">
+                    <section class="container scroller mobile-scroller fullpage d-flex flex-column justify-content-center bg-light">
                         <div class="apparel d-none d-lg-block" data-aos="fade-right">
                             <img src="img/mayamirror/blue_hoodie.png">
                         </div>
@@ -224,7 +224,7 @@
                         </div>
                     </section>
 
-                    <section class="container scroller fullpage d-flex flex-column justify-content-center bg-light">
+                    <section class="container scroller mobile-scroller fullpage d-flex flex-column justify-content-center bg-light">
                         <div class="apparel d-none d-lg-block" data-aos="fade-right">
                             <img src="img/mayamirror/green_shirt.png">
                         </div>
@@ -239,7 +239,7 @@
                     </section>
 
 
-                    <section class="container scroller fullpage d-flex flex-column justify-content-center bg-light">
+                    <section class="container scroller mobile-scroller fullpage d-flex flex-column justify-content-center bg-light">
                         <div class="apparel d-none d-lg-block" data-aos="fade-right">
                             <img src="img/mayamirror/blue_tshirt.png">
                         </div>
@@ -430,6 +430,8 @@
                     }
                 }
             });
+        } else {
+            $(".mobile-scroller").removeClass("fullpage");
         }
         AOS.init();
 

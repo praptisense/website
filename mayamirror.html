@@ -134,7 +134,7 @@
 
 
                 <!-- Product -->
-                <section id="product" class="container scroller bg-light rounded-bottom">
+                <section id="product" class="container scroller bg-light ">
                     <div class="row" data-aos="zoom-out">
                         <div class="col">
                             <h1 class="text-center">Our Solution</h1>
@@ -194,7 +194,11 @@
 
 
                 <section class="">
-
+                    <div class="container bg-white text-secondary mx-auto p-5">
+                        <div class="col">
+                            <h1 class="text-center mb-0">Features</h1>
+                        </div>
+                    </div>
                     <!--The static section-->
 
                     <section id="staticMan" class="fullpage overlay d-none">
@@ -207,8 +211,8 @@
                     <!--The static section end-->
 
 
-                    <section class="container scroller fullpage d-flex flex-column justify-content-center">
-                        <div class="apparel d-none d-md-block" data-aos="fade-right">
+                    <section class="container scroller fullpage d-flex flex-column justify-content-center bg-light">
+                        <div class="apparel d-none d-lg-block" data-aos="fade-right">
                             <img src="img/mayamirror/blue_hoodie.png">
                         </div>
                         <div class="card bg-white text-secondary feature-card align-self-end" data-aos="fade-left">
@@ -220,8 +224,8 @@
                         </div>
                     </section>
 
-                    <section class="container scroller fullpage d-flex flex-column justify-content-center">
-                        <div class="apparel d-none d-md-block" data-aos="fade-right">
+                    <section class="container scroller fullpage d-flex flex-column justify-content-center bg-light">
+                        <div class="apparel d-none d-lg-block" data-aos="fade-right">
                             <img src="img/mayamirror/green_shirt.png">
                         </div>
                         <div class="card bg-white text-secondary feature-card align-self-end" data-aos="fade-left">
@@ -235,8 +239,8 @@
                     </section>
 
 
-                    <section class="container scroller fullpage d-flex flex-column justify-content-center">
-                        <div class="apparel d-none d-md-block" data-aos="fade-right">
+                    <section class="container scroller fullpage d-flex flex-column justify-content-center bg-light">
+                        <div class="apparel d-none d-lg-block" data-aos="fade-right">
                             <img src="img/mayamirror/blue_tshirt.png">
                         </div>
 
@@ -417,10 +421,10 @@
                     console.log(index);
                     console.log(sections);
                     if (index < 3 || index > 5) {
-                        $("#staticMan").removeClass(" d-md-block");
+                        $("#staticMan").removeClass(" d-lg-block");
                     } else {
                         setTimeout(function() {
-                            $("#staticMan").addClass(" d-md-block");
+                            $("#staticMan").addClass(" d-lg-block");
                         }, 150);
 
                     }

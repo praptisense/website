@@ -177,6 +177,8 @@ h5 {
 
 .feature-card {
     max-width: 500px;
+    margin-right: 50px;
+    border: none;
 }
 
 .grow {
@@ -258,7 +260,7 @@ h5 {
 .overlay {
     position: fixed;
     background: transparent;
-    z-index: 0;
+    z-index: 1;
 }
 
 
@@ -283,10 +285,12 @@ h5 {
     position: absolute;
     left: 10%;
     top: 25%;
+    z-index: 3;
 }
 
 .apparel img {
     width: 250px;
+    z-index: 3;
 }
 
 /*

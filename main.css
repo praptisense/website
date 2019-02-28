@@ -277,11 +277,11 @@ h5 {
 
 #staticMan .human img {
     position: absolute;
-    width: 300px;
+    width: 200px;
     height: auto;
 
-    left: 7%;
-    padding-top: 12%;
+    left: 10%;
+    padding-top: 20%;
 }
 
 .scroller.fullpage {
@@ -289,14 +289,17 @@ h5 {
 }
 
 .apparel {
-    position: absolute;
-    left: 10%;
-    top: 25%;
+    /*    top: 25%;*/
     z-index: 3;
 }
 
 .apparel img {
-    width: 250px;
+    left: 10%;
+    padding-top: 20%;
+    position: absolute;
+    top: 0%;
+    margin-left: 10px;
+    width: 200px;
     z-index: 3;
 }
 

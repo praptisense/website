@@ -12,18 +12,32 @@
     <link rel="shortcut icon" href="img/praptisense_logo.webp" />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link defer rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link defer rel="stylesheet" href="main.css">
+    <link defer rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
-    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Roboto" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link defer href="https://fonts.googleapis.com/css?family=Comfortaa|Roboto" rel="stylesheet">
+    <link defer rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <title>Praptisense</title>
 
+    <script defer src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+    <script defer src="js/three.js"></script>
+    <script defer src="js/bird.js"></script>
+    <script defer src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script defer src="js/scrollify.js"></script>
+
+    <script defer src="main.js"></script>
+
 </head>
 
-<body class="">
+<body class="index">
     <div class="content-wrapper scroller pt-5 ">
         <nav class="navbar navbar-expand-lg navbar-dark sticky-top ">
             <div class="container">
@@ -298,25 +312,25 @@
                                     <div class="form-group row">
 
                                         <label for="exampleInputEmail1">Name</label>
-                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="jhon doe">
+                                        <input type="email" class="form-control" id="InputName" aria-describedby="emailHelp" placeholder="jhon doe">
                                     </div>
 
                                     <div class="form-group row">
                                         <label for="exampleInputEmail1">Email address</label>
-                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="john.doe@mail.com">
+                                        <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="john.doe@mail.com">
                                         <!--<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
                                     </div>
 
                                     <div class="form-group row">
                                         <label for="exampleInputEmail1">Phone</label>
-                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="+91 987654321">
+                                        <input type="email" class="form-control" id="InputPhone" aria-describedby="emailHelp" placeholder="+91 987654321">
                                         <!--<small id="emailHelp" class="form-text text-muted">We'll never share your Phone with anyone else.</small>-->
                                     </div>
 
 
                                     <div class="form-group row">
                                         <label for="exampleFormControlTextarea1">Your Message</label>
-                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                        <textarea class="form-control" id="InputMessage" rows="3"></textarea>
                                         <small id="emailHelp" class="form-text text-muted">We'll never share your contact information with anyone else.</small>
                                     </div>
 
@@ -362,38 +376,7 @@
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <!--    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-    <script src="main.js"></script>
-
-    <script src="js/three.js"></script>
-    <script src="js/bird.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="js/scrollify.js"></script>
-
-    <script>
-        VANTA.BIRDS({
-            el: ".banner",
-            color1: 0XDDFF00,
-            color2: 0xDD0000,
-            backgroundColor: 0x4e5266,
-        })
-        AOS.init();
-
-        if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
-            $.scrollify({
-                interstitialSection: ".scroller",
-                scrollbars: true,
-                touchScroll: true,
-                overflowScroll: true,
-                scrollSpeed: 600,
-                easing: "easeOutExpo",
-            });
-        }
-
-    </script>
 </body>
 
 </html>

@@ -58,11 +58,12 @@ h5 {
 
 .banner {
     width: 100%;
-    height: 75vh;
+    /*    height: 75vh;*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    position: relative;
 }
 
 .fullpage {
@@ -323,3 +324,53 @@ h5 {
     left: 40%;
 
 }*/
+
+.banner-video {
+    width: 100%;
+}
+
+.banner .scroll-down {
+    color: #4e5266;
+    font-size: 2rem;
+    bottom: 20px;
+}
+
+.vert-move {
+    -webkit-animation: mover 1s infinite alternate;
+    animation: mover 1s infinite alternate;
+}
+
+.vert-move {
+    -webkit-animation: mover 1s infinite alternate;
+    animation: mover 1s infinite alternate;
+}
+
+@-webkit-keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+.navbar-brand .logo-font {
+    font-size: 1.5rem;
+    display: inline-block;
+    margin-top: 4px;
+}
+
+.navbar-brand img {
+    margin-top: -4px;
+}

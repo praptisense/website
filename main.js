@@ -4,12 +4,12 @@ $(document).ready(function () {
 
     if ($('body.index').length == 1) {
 
-        VANTA.BIRDS({
-            el: "body.index .banner",
-            color1: 0XDDFF00,
-            color2: 0xDD0000,
-            backgroundColor: 0x4e5266,
-        })
+        //        VANTA.BIRDS({
+        //            el: "body.index .banner",
+        //            color1: 0XDDFF00,
+        //            color2: 0xDD0000,
+        //            backgroundColor: 0x4e5266,
+        //        })
 
         if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
             $.scrollify({

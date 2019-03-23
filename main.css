@@ -1,5 +1,6 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.1rem;
 }
 
 @media (min-width: 576px) {
@@ -19,7 +20,7 @@ body {
 
 
 .logo-font {
-    font-family: 'opalregular', 'Roboto', sans-serif;
+    font-family: 'opalregular', sans-serif;
 }
 
 .content-wrapper,
@@ -45,7 +46,7 @@ h2,
 h3,
 h4,
 h5 {
-    font-family: 'Comfortaa', 'Roboto', sans-serif;
+    font-family: 'Montserrat', 'Ubuntu', sans-serif;
 
 }
 
@@ -190,7 +191,7 @@ h5 {
     #features i {
         font-size: 10em;
     }
-    
+
     #features h4 {
         font-size: 4em;
     }
